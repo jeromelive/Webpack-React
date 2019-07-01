@@ -72,13 +72,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 引入 react-router-dom
 npm install -S react-router-dom
-`
-  import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+  import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
   import Home from './pages/home';
   import About from './pages/about';
   import Users from './pages/users';
-
   function AppRouter(){
     return (
       <Router>
@@ -104,6 +102,5 @@ npm install -S react-router-dom
       </Router>
     )
   }
-`
 
 webpack 如何实现 import() 方法
