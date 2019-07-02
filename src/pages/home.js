@@ -12,7 +12,6 @@ class App extends React.Component {
     console.log(add(1, 2))
   }
   render () {
-    console.log(this.props)
     console.log(this.context)
     return (
       <div>
