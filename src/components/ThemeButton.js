@@ -3,7 +3,6 @@ import { ThemeContext } from '../lib/theme-context'
 
 class ThemedButton extends React.Component {
   componentDidMount () {
-    throw new Error('I crashed!')
   }
   render () {
     let props = this.props

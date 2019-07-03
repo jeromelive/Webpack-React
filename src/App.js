@@ -8,6 +8,7 @@ import MyErrorBoundary from './components/MyErrorBoundary'
 const Home = lazy(() => import('./pages/home'))
 const About =  lazy(() => import('./pages/about'))
 const Users =  lazy(() => import('./pages/users'))
+const Refs =  lazy(() => import('./pages/refs/test'))
 // const ThemeButton =  lazy(() => import('./components/ThemeButton'))
 
 const UserContext = React.createContext({
@@ -48,6 +49,9 @@ class AppRouter extends React.Component {
                   <li>
                     <Link to='/users'>users</Link>
                   </li>
+                  <li>
+                    <Link to='/refs'>refs</Link>
+                  </li>
                 </ul>
               </nav>
     
@@ -56,6 +60,7 @@ class AppRouter extends React.Component {
                   <Route path='/' exact component={Home} changeTheme={this.toggleTheme} />
                   <Route path='/about' component={About} />
                   <Route path='/Users' component={Users} />
+                  <Route path='/refs' component={Refs} />
                 </Switch>
               </Suspense>
             </div>
